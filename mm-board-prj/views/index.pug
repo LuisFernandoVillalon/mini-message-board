@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  main
+    each message in messages
+      h3= message.text
+      strong= message.user 
+      p= message.added
+
+    

@@ -1,0 +1,11 @@
+extends layout 
+
+block content 
+    header 
+        h1= 'Message Board'
+        h3= 'Send a message'
+    main
+        form(method='POST' action='/new')
+            textarea(name='text' placeholder='Send a cool message!' cols='30' )
+            input(type='text', placeholder='Name of sender' name='user' id='user')
+            button(type='submit' id='submit-btn')= 'post'
